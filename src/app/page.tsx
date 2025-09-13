@@ -206,14 +206,16 @@ export default async function Home() {
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="#"
+              href="https://github.com/stevecoding100"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
+              target="_blank"
             />
             <SocialLink
-              href="#"
+              href="https://www.linkedin.com/in/steve-delarosa/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
+              target="_blank"
             />
           </div>
         </div>
@@ -221,7 +223,6 @@ export default async function Home() {
       <Photos />
       <Container className="mt-24 md:mt-28">
         <Projects />
-
         <SimpleLayout
           title="My professional journey"
           intro="Here’s a look at my experience, skills, and the work I’ve done over the years. From front-end engineering to full-stack development, this resume reflects the path I've taken and the value I bring to each team I join."

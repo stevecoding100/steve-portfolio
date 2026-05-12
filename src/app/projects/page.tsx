@@ -25,14 +25,15 @@ const projects = [
     logo: logoPlanetaria,
   },
   {
-    name: 'Joke Teller',
-    description: 'A robot that uses programming references to say silly jokes.',
+    name: 'Flowable',
+    description:
+      'AI-powered workflow automation app that transforms unstructured inputs like emails and files into structured data and automatically executes actions.',
     link: {
-      href: 'https://joke-teller1.netlify.app/',
-      label: 'robotjoke.app',
+      href: '#',
+      label: 'flowable.app',
     },
     github: {
-      href: 'https://github.com/stevecoding100/joke-teller-app',
+      href: '#',
       label: 'View code',
     },
     logo: logoAnimaginary,

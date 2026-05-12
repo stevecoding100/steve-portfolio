@@ -8,21 +8,24 @@ import logoCosmos from '@/images/logos/cosmos.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
+import sparkleImg from '@/images/photos/sparkle.png'
+import numoraAI from '@/images/photos/numora.png'
+import flowable from '@/images/photos/flowable.png'
 
 const projects = [
   {
     name: 'Numora',
     description:
-      'A full-stack app for tracking income, expenses, budgets, and savings goals with a clean, intuitive interface.',
+      'A full-stack personal finance app for tracking income, expenses, budgets, and savings goals, featuring an AI chatbot powered by Gemini for financial insights.',
     link: {
       href: 'https://personal-finance-tracker-lemon-three.vercel.app',
       label: 'numora.app',
     },
     github: {
-      href: 'https://github.com/stevecoding100/personal-finance-tracker',
+      href: 'https://github.com/stevecoding100/numora-ai-app',
       label: 'View code',
     },
-    logo: logoPlanetaria,
+    logo: numoraAI,
   },
   {
     name: 'Flowable',
@@ -36,15 +39,22 @@ const projects = [
       href: '#',
       label: 'View code',
     },
-    logo: logoAnimaginary,
+    logo: flowable,
   },
   {
-    name: 'UX/UI Numora Design',
+    name: 'Sparkle',
     description:
-      'A clean and intuitive UI/UX design for the Numora app, built to simplify personal finance management with responsive, user-friendly layouts.',
-    link: { href: '#', label: 'numoradesign.app' },
+      'A modern cleaning services website model featuring a clean layout, professional imagery, and an easy-to-navigate design for cleaning businesses.',
+    link: {
+      href: 'https://sparkle-cleaning-seven.vercel.app',
+      label: 'sparkle.app',
+    },
+    github: {
+      href: 'https://github.com/stevecoding100/sparkle-cleaning',
+      label: 'View code',
+    },
 
-    logo: logoHelioStream,
+    logo: sparkleImg,
   },
 ]
 
@@ -76,11 +86,11 @@ export default function Projects() {
       >
         {projects.map((project) => (
           <Card as="li" key={project.name}>
-            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+            <div className="h-full w-[270px]">
               <Image
                 src={project.logo}
                 alt=""
-                className="h-8 w-8"
+                className="h-[450px] w-full rounded-lg object-cover object-top"
                 unoptimized
               />
             </div>
